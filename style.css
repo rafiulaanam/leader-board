@@ -1,11 +1,167 @@
-.player-img img{
-    width: 56px;
-height: 56px;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+body {
+  background: #f3f1ff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
-.top-players{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+/* Nvigation */
+
+header {
+  width: 100%;
+  height: 94px;
+  background: #562eff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
-.player{
-    display: flex;
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 870px;
+}
+.title {
+  display: flex;
+  align-items: center;
+}
+.title span {
+  color: white;
+  margin-left: 16px;
+}
+.logo img {
+  width: 40px;
+  height: 50px;
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu-title a {
+  text-decoration: none;
+  margin-left: 36px;
+  color: white;
+}
+.profile img {
+  margin-left: 36px;
+  width: 51px;
+  height: 51px;
+
+  margin-top: 10px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Top Player */
+.container {
+  width: 870px;
+  /* height: 679px; */
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 5px;
+  margin-top: 21px;
+}
+.section-title {
+  font-size: 24px;
+  color: #562eff;
+  margin-top: 3px;
+}
+.top-players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  margin-bottom: 30px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player-img img {
+  width: 56px;
+  height: 56px;
+}
+.player-name h3 {
+  margin-left: 16px;
+  font-size: 18px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+}
+/* Top Blog */
+
+.top-blogs {
+  margin-top: 27px;
+}
+.blogs-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.blog {
+  display: flex;
+}
+.thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.author-text {
+  width: 197px;
+  height: 100px;
+  margin-left: 16px;
+}
+.author-name {
+  margin-top: -12px;
+}
+
+.author-name a {
+  color: #562eff;
+  text-decoration: none;
+}
+
+/* Lates Course */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.course {
+  width: 253px;
+}
+.banner img {
+  width: 224px;
+  height: 104px;
+}
+.course-title h3 {
+  margin-bottom: 0;
+}
+.course-year h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.course-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.star i {
+  color: #ffc014;
+  font-size: 12px;
+}
+.star :last-child {
+  color: #e5e5e5;
+}
+.rating {
+  color: #a2a2a2;
+  font-size: 14px;
+}
+.clock {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fee5df;
+  border-radius: 14.6913px;
+  width: 94.83px;
+  height: 29.38px;
 }
